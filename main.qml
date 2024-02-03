@@ -3,10 +3,11 @@ import QtQuick.Window 2.14
 import QtQuick.Controls 2.0
 
 Window {
+
     visible: true
     width: 360
     height: 640
-    title: qsTr("Hello World")
+    title: qsTr("reword")
     color: "#FFFFFF"
 
     StackView {
@@ -23,7 +24,7 @@ Window {
         anchors.bottom: parent.bottom
 
         Row { // 按钮容器
-            spacing: 20
+            spacing: 45
             anchors.centerIn: parent
 
             // 自定义按钮1

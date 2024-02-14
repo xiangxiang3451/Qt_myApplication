@@ -1,12 +1,37 @@
 import QtQuick 2.0
 import QtQuick.Controls 2.0
-
+import "text.js" as JS
 Item {
 
     Rectangle {
         id:rec1
         color: "lightblue"
         anchors.fill: parent
+
+        Rectangle{//开头的文本框
+            id:text
+            width: 330
+            height: 60
+            radius: 10
+            color: parent.color
+            anchors.horizontalCenter: parent.horizontalCenter
+            Text {
+                width: 330
+                anchors.topMargin: 3
+                id: textArea
+                anchors.centerIn: parent
+                text: qsTr("")
+                wrapMode: Text.WordWrap
+            }
+        }
+        Component.onCompleted: {
+            JS.callTextApi();
+        }
+        onVisibleChanged: {
+            if(visible){
+                JS.callTextApi();
+            }
+        }
 
         Rectangle{//卡片
             id:wordCard

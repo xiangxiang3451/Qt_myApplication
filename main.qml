@@ -1,7 +1,7 @@
 import QtQuick 2.14
 import QtQuick.Window 2.14
 import QtQuick.Controls 2.0
-
+import "text.js" as JS
 Window {
 
     visible: true
@@ -15,6 +15,20 @@ Window {
         anchors.fill: parent
         initialItem: Qt.resolvedUrl("page1.qml")
     }
+
+//    Rectangle{//开头的文本框
+//        width: 360
+//        height: 200
+//        anchors.fill: parent
+//        Text {
+//            id: textArea
+//            anchors.fill: parent
+//            text: qsTr(" ")
+//        }
+//    }
+
+
+
 
     Rectangle { // 底部菜单背景
         id: bottomMenu
@@ -43,8 +57,8 @@ Window {
                     anchors.fill: parent
                     onClicked: {
                         stackView.replace(Qt.resolvedUrl("page1.qml"))
-                }
-            }}
+                    }
+                }}
 
             // 自定义按钮2
             Rectangle {

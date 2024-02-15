@@ -54,13 +54,13 @@ Item {
                 Button{
                     width: 50
                     height: 20
-                    text: "添加"
+                    text: "add"
 
                 }
                 Button{
                     width: 50
                     height: 20
-                    text:"返回"
+                    text:"return"
                     onClicked:{
                         wordCard.visible=false
                     }
@@ -81,7 +81,7 @@ Item {
 
             Text {
                 id: txt
-                text: qsTr("+ 单词")
+                text: qsTr("+ word")
                 anchors.centerIn: parent
             }
 

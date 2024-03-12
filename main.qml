@@ -16,17 +16,6 @@ Window {
         initialItem: Qt.resolvedUrl("page1.qml")
     }
 
-//    Rectangle{//开头的文本框
-//        width: 360
-//        height: 200
-//        anchors.fill: parent
-//        Text {
-//            id: textArea
-//            anchors.fill: parent
-//            text: qsTr(" ")
-//        }
-//    }
-
 
 
 
